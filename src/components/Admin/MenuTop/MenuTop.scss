@@ -1,0 +1,31 @@
+@import '../../../scss/index.scss';
+
+.menu-top{
+    display: flex; //Todo posicionado en la misma linea.
+
+    button { //todos los botones van a tener  
+        color: $font-light;
+
+        &:hover { // cuando pase por arriba del icono 
+            color:$primary-color;
+        }
+
+        &:focus, 
+        &:active {
+            color: $font-light;
+        }
+
+    }
+
+    &-left{
+        &-logo{
+            width: 200px;
+            padding: 0 10px;
+        }
+    }
+
+    &-right{
+        position: absolute;
+        right: 0;
+    }
+}
